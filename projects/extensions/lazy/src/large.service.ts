@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class UnusedService {
+export class LargeService {
     property1: string;
     property2: string;
     property3: string;

@@ -2,4 +2,4 @@
  * Public API Surface of extensions
  */
 
-export * from './lib/utility';
+export * from './src/large.service';
