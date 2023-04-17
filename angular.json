@@ -53,6 +53,10 @@
               ],
               "outputHashing": "all"
             },
+            "production-source-map": {
+              "sourceMap": true,
+              "namedChunks": true
+            },
             "development": {
               "buildOptimizer": false,
               "optimization": false,
