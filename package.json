@@ -4,10 +4,11 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build:app": "ng build --project app --configuration production-source-map",
+    "build:extensions": "ng build --project extensions",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "source-map": "ng build --configuration production-source-map && npx source-map-explorer dist/**/*.js"
+    "source-map": "npm run build:extensions && npm run build:app && npx source-map-explorer dist/app/**/*.js"
   },
   "private": true,
   "dependencies": {
@@ -35,6 +36,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "~1.7.0",
+    "ng-packagr": "^12.1.1",
     "typescript": "~4.3.5"
   }
 }
