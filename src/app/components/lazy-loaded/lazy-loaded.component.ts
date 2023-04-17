@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { UsedService } from 'src/app/services/used.service';
+import { LargeService } from 'src/app/services/large.service';
 
 @Component({
   selector: 'app-lazy-loaded',
@@ -8,7 +8,7 @@ import { UsedService } from 'src/app/services/used.service';
 })
 export class LazyLoadedComponent implements OnInit {
 
-  constructor(protected usedService: UsedService) { }
+  constructor(protected largeService: LargeService) { }
 
   ngOnInit(): void {
   }
